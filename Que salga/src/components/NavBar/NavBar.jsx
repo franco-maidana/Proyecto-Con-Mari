@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Navigate, NavLink } from "react-router-dom";
 import './NavBar.css';
 
 const NavBar = () => {
@@ -22,7 +23,7 @@ const NavBar = () => {
             <a className="nav-link" href="/services">Productos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact">Contacto</a>
+            <NavLink to='/contactos' className="nav-link" href="/contact">Contacto</NavLink>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/contact">Carrito</a>
