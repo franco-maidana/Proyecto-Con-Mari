@@ -19,13 +19,15 @@ const NavBar = () => {
             <a className="nav-link" href="/about">Acerca de</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/services">Servicios</a>
+            <a className="nav-link" href="/services">Productos</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/contact">Contacto</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/contact">Carrito</a>
+          </li>
         </ul>
-        <a href="/signup" className="btn btn-primary ms-lg-3">Regístrate</a>
       </div>
     </nav>
   );
