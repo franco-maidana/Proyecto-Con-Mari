@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Navigate, NavLink } from "react-router-dom";
 import './NavBar.css';
 
 const NavBar = () => {
@@ -19,13 +20,15 @@ const NavBar = () => {
             <a className="nav-link" href="/about">Acerca de</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/services">Servicios</a>
+            <a className="nav-link" href="/services">Productos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact">Contacto</a>
+            <NavLink to='/contactos' className="nav-link" href="/contact">Contacto</NavLink>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/contact">Carrito</a>
           </li>
         </ul>
-        <a href="/signup" className="btn btn-primary ms-lg-3">Regístrate</a>
       </div>
     </nav>
   );
